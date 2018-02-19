@@ -24,4 +24,4 @@ script:
   - cd cf-graph
   - conda install --file requirements/run
   - python 00-find-feedstocks.py
-  - doctr deploy . --built-docs ./cf-graph/
+  - doctr deploy . --built-docs .
