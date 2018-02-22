@@ -20,7 +20,7 @@ before_install:
 
 install:
   - export GIT_FULL_HASH=`git rev-parse HEAD`
-  - conda create python=$TRAVIS_PYTHON_VERSION
+  - conda install python=$TRAVIS_PYTHON_VERSION
   - source activate testenv
   - git clone https://github.com/regro/cf-graph.git
   - cd cf-graph
