@@ -11,4 +11,4 @@ python:
 
 install:
   - git clone https://github.com/regro/cf-scripts.git
-  - ./00.sh
+  - ./cf-scripts/00.sh
