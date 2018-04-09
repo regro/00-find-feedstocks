@@ -7,6 +7,8 @@ env:
     - secure: "SmAP2f1JN0n2NM6c4QFipx/6EWnyqPUwPetqeO6EBxVWi5YN5YoJ2B751h5ochLm/rQMT0CmIsjitz31Bue54FnJzJ0rIgLqFz7yjmoeNmpnYk44j+A9XlAhYW6iv4Q6Vd+Fv8nBQICobzNnrxcpCRBL/ExeRKkhzTpqIKoLVWnr0UXUZpZ22e3jKvYgZO8PCnwa2gF/Uifd3TdCSyGvdJtIy/oHRohJNMUo6jlEa51HKIDGPh2SexlMnlol5x8VQTTTaAlBhGT+jjTcBiLss6XAvehC08ge+M7NlGQwYDoaNQRJrHMEIZSLX1hV00kv6bO3kr7O7G2Z93Eur8ypzU18Caqrr7L5/5a+fpZ2hd2DucRlwyHTCKlLmfJuipjSyx8nHPXOjpXb22LUmaExEWBOoiieccc1I433MTZCOAuqV3RimkzV19jAEvvFd4ClVOg4QKKmHHrL9cKD20cRShpbHGKrZT4BNI0jSuEURAILDWP/Kpqy6XjFz8lTSZMZYH8v/wKgZOraop/XAKQVIQ57f02WxPkUQE3x6YVKG+wKd5Nx82J69XZUSurmxcEG+2XlIKQYR4BJyNsylayPvv6p1+V/F298mn90wK0ucsTjhOYgRsCwr4NNVRfYFRah8RXBkSqTEPNsv0DmRLeHLFiGJuOTniNOyE7R3T377K8="
 
 install:
+  - export START_TIME = $(date +%s)
+  - export TIMEOUT = 2700
   - set -e
   - git clone https://github.com/regro/cf-scripts.git
   - cd cf-scripts
